@@ -1,13 +1,14 @@
 # latexビルドしてくれるくん
 
 ## 使い方
-  1. ビルドしたいtexファイルのあるディレクトリにcdする
+  1. このディレクトリにビルドしたいtexファイルをコピーする
   ```sh
-    cd docs/latex
+    cd latex-builder
+    cp docs/latex/sample.tex .
   ```
-  2. ビルドしたいファイル名(.texを除く)を引数に与えて実行する
+  2. ビルドしたいファイル名(.texを含めない)を引数に与えて実行する
   ```sh
-    ./build.sh build-file
+    ./build.sh sample
   ```
 
 ## 前準備
